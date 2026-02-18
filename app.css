@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f9f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: white;
+}
+
+.logo {
+  color: #2e7d32;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.login-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.hero {
+  background: linear-gradient(#2e7d32, #66bb6a);
+  color: white;
+  padding: 60px;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+}
+
+.primary-btn {
+  background: #ff8f00;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.secondary-btn {
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.tracker {
+  padding: 40px;
+  background: white;
+}
+
+.tracker-form input {
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.alerts {
+  padding: 40px;
+}
+
+.alert-cards {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.red { background: #e53935; }
+.yellow { background: #fbc02d; color: black; }
+.green { background: #43a047; }
+
+.team {
+  padding: 40px;
+  background: white;
+}
+
+.team-cards {
+  display: flex;
+  gap: 15px;
+}
+
+.member {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.advisor {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
