@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelf-Alert</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Theme color (for iOS/Android status bar) -->
+    <meta name="theme-color" content="#134e4a" />
+
+    <!-- iOS support -->
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Shelf-Alert" />
+
+    <!-- OneSignal SDK -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function (OneSignal) {
+        await OneSignal.init({
+          appId: "02f830ba-118f-4321-a875-1481bea83b3d",
+          safari_web_id: "web.onesignal.auto.2eb33d58-6740-481f-b49f-67bae0b73a06",
+          notifyButton: {
+            enable: true
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Vite entry -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
